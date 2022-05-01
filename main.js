@@ -13,7 +13,7 @@ const gradosKelvin = 273.15;
 window.onload = function () {
     if (localStorage.length != 0) {
         let valorGuardado = localStorage.getItem('lugar');
-        fetch(`http://api.openweathermap.org/data/2.5/weather?q=${valorGuardado}&appid=${API_KEY}`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${valorGuardado}&appid=${API_KEY}`)
         .then(function(response){
             return response.json();
         }).then(function(json){
@@ -27,7 +27,7 @@ window.onload = function () {
 const pedirClima = ()=> {
     let valorBuscar = input.value;
     localStorage.setItem('lugar',valorBuscar);
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${valorBuscar}&appid=${API_KEY}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${valorBuscar}&appid=${API_KEY}`)
     .then(function(response){
         return response.json();
     }).then(function(json){
@@ -139,7 +139,7 @@ function mostarResultado(data) {
             break;
         };
 
-        fetch(`http://openweathermap.org/img/wn/${iconID}@2x.png`)
+        fetch(`https://openweathermap.org/img/wn/${iconID}@2x.png`)
         .then(function(response){
             return response;
         }).then(function(data){
