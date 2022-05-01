@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="iconos/favicon.png" />
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Marianela Fernandes Canosa, Cátedra PWA</title>
+</head>
+<body>
+    <main id="main">
+        <div class="container text-center">
+            <div>
+                <h1>Conocé el clima de tu ciudad</h1>
+                <label for="valor">
+                    <p>Ingrese Ciudad, Provincia o País:</p>
+                    <input type="text" name="valor" id="valor">
+                </label>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-primary" id="button">Buscar</button>
+            </div>
+            <div id="resultado">
+                <div id="icono"></div>
+                <div id="nombre"></div>
+                <div id="info"></div>
+                <div id="mapa" class="container"></div>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+    <script src="css/bootstrap.bundle.min.js"></script>
+</body>
+</html>
